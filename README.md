@@ -7,7 +7,7 @@ This is a web application which
 * read database and send information to frontend,
 * refresh frontend information.
 
-##Used technologies:
+## Used technologies:
 * REST
 * Angular
 * Java Script
