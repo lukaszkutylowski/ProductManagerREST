@@ -9,11 +9,12 @@ This is a web application which
 
 ## Used technologies:
 * REST
-* Angular
+* AngularJS
 * Java Script
 * HTML
 * MySQL
 * Spring Boot
+* Spring Data
 * JpaRepository
 * Functional Programming
 * OOP
