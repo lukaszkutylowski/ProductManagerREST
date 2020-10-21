@@ -1,0 +1,25 @@
+<DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Product Manager</title>
+</head>
+<body ng-controller="ProductController as  prodControl">
+	<h1>{{prodControl.appName}}</h1>
+	<form>
+		<input type="text" ng-model="prodControl.product.name" placeholder="Name"><br>
+		<input type="text" ng-model="prodControl.product.producer" placeholder="Producer"><br>
+		<input type="text" ng-model="prodControl.product.kcal" placeholder="kcal"><br>
+		<button ng-click="prodControl.addProduct(prodControl.product)">Add Product</button>
+	</form>
+	
+	<ul>
+		<li ng-repeat="prod in prodControl.products">
+			{{prod.name}} - {{prod.producer}} ({{prod.kcal}} kcal)
+		</li>
+	</ul>
+	<script src="bower_components/angular/angular.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+	<div>Product Manager Application | Developed by Łukasz Kutyłowski | 2020</div>
+</body>
+</html>
